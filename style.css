@@ -1,6 +1,32 @@
 #input
 {
-    background-color: red;
+    background-color: whitesmoke;
     flex-direction: initial;
-    width: 40px;
+    width: auto;
+}
+.title{
+    margin-left: 50px;
+    flex: 0vi;
+    background-color: white;
+    height: 80%;
+    width: 50%;
+}
+.cv{
+    margin-left: 50%;
+}
+body{
+    background-color: white;
+}
+
+.information{
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* padding-left: 50px; */
+
+}
+.title{
+    background-color: antiquewhite;
 }

@@ -1,57 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #input
-{
-    background-color: whitesmoke;
-    flex-direction: initial;
-    width: auto;
-}
-.title{
-    margin-left: 50px;
-    flex: 0vi;
-    background-color: white;
-    height: 80%;
-    width: 50%;
-}
-.cv{
-    margin-left: 50%;
-}
-body{
-    background-color: white;
-}
-
-.information{
-    margin-top: 50px;
-    width: 500px;
-    height: 500px;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* padding-left: 50px; */
-
-}
-.title{
-    background-color: antiquewhite;
-}
-    </style>
+    <title>Formulär</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <section class ="title">
-    <div><h1 class="cv">Register</h1>
-        <nav class="information">
-            <div id="name"><span>Name:</span> <span> <input type="text"></span></div>
-            <div id="Email"><span>Email:</span> <span><input type="text"></span></div>
-        </nav>
+    <h1>Skicka data till Azure Function</h1>
+  <form method="post" action="https://formAzureFuntction.azurewebsites.net/api/formAzureFuntction">
+    <label for="name">Namn:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
 
+    <label for="email">E-post:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
 
-    
-        </div>
-</section>
+    <button type="submit">Send</button>
+  </form>
    
 </body>
 </html>
