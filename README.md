@@ -1,47 +1,50 @@
 DataToAzureFunction
 
-A small web form project where users submit their Name and Email and the data gets stored in an Azure PostgreSQL database via an Azure Function backend.
+A simple web form project where users can submit their Name and Email, which are then stored in an Azure PostgreSQL database via an Azure Function backend.
 
-Features
+✨ Features
 
-Simple registration form collecting Name and Email.
+📋 Minimal registration form collecting Name and Email
 
-Frontend in HTML, JavaScript (static).
+🌐 Frontend: HTML + JavaScript (static)
 
-Backend is an Azure Function that accepts POST requests and writes to an Azure PostgreSQL database.
+⚡ Backend: Azure Function handling POST requests
 
-Configuration
+🗄️ Data persistence in Azure PostgreSQL
 
-You will need to set up/configure:
+⚙️ Configuration
 
-Database connection string for the PostgreSQL instance (host, port, database name, username, password).
+Before running the project, configure the following:
 
-Azure Function settings (e.g. environment variables) so that it can connect to the database.
+Database connection string for the PostgreSQL instance:
+host, port, database name, username, password
 
-Front-end form URL: it needs to know the URL of the Azure Function endpoint to send the data.
+Azure Function settings (environment variables) to connect to the database
 
-Usage
+Frontend form: update the endpoint URL of the Azure Function
 
-Open the form in your browser (e.g. index.html).
+🚀 Usage
 
-Enter Name and Email.
+Open the form in your browser (index.html).
 
-Submit the form.
+Enter your Name and Email.
 
-The front-end sends a POST request to the Azure Function backend.
+Click Submit.
 
-The Azure Function processes the request and saves the data to the PostgreSQL database.
+The frontend sends a POST request to the Azure Function backend.
+
+The Azure Function processes the request and saves the data to PostgreSQL.
 
 Verify in the database that a new row has been inserted.
 
-Deployment
+📦 Deployment
 
-To deploy to Azure:
+To deploy on Azure:
 
-Deploy the Azure Function (e.g. via Azure CLI / Azure Portal / GitHub Actions).
+Deploy the Azure Function (via Azure CLI, Portal, or GitHub Actions).
 
-Deploy / host your frontend (could be static hosting, e.g. Azure Static Web Apps or any hosting service).
+Host the frontend (e.g., Azure Static Web Apps, GitHub Pages, or any static hosting service).
 
-Ensure the function’s connection strings and settings are configured in the Function’s Application Settings in Azure.
+Configure connection strings and environment variables in the Function’s Application Settings.
 
-Ensure network/firewall settings allow access (if needed) between your function and the database.
+Ensure network/firewall settings allow the Function to reach the PostgreSQL database.
