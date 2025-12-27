@@ -2,17 +2,17 @@ DataToAzureFunction
 
 A simple web form project where users can submit their Name and Email, which are then stored in an Azure PostgreSQL database via an Azure Function backend.
 
-✨ Features
+ Features
 
-📋 Minimal registration form collecting Name and Email
+ Minimal registration form collecting Name and Email
 
-🌐 Frontend: HTML + JavaScript (static)
+ Frontend: HTML + JavaScript (static)
 
-⚡ Backend: Azure Function handling POST requests
+ Backend: Azure Function handling POST requests
 
-🗄️ Data persistence in Azure PostgreSQL
+ Data persistence in Azure PostgreSQL
 
-⚙️ Configuration
+ Configuration
 
 Before running the project, configure the following:
 
@@ -23,7 +23,7 @@ Azure Function settings (environment variables) to connect to the database
 
 Frontend form: update the endpoint URL of the Azure Function
 
-🚀 Usage
+ Usage
 
 Open the form in your browser (index.html).
 
@@ -37,7 +37,7 @@ The Azure Function processes the request and saves the data to PostgreSQL.
 
 Verify in the database that a new row has been inserted.
 
-📦 Deployment
+ Deployment
 
 To deploy on Azure:
 
